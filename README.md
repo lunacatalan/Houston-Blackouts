@@ -20,5 +20,6 @@ Contents/Structure:
         └───VNP46A1
         |   │   VIIRS data files
 
-Data Download Instructions
+Data Download Instructions:
+
 **IMPORTANT** The data associated with this assignment is too large to include in the GitHub repo. Data should be stored locally and added to .gitignore file. Download data from [here](https://drive.google.com/file/d/1bTk62xwOzBqWmmT791SbYbHxnCdjmBtw/view?usp=sharing).
