@@ -1,4 +1,4 @@
-# Houston-Blackouts
+# Analysis of blackouts in the Houston, Texas metropolitan area in February 2021
 This project looked at the impact of winter storms in Houston, Texas in Febuary, 2021. 
 
 ## Goals
