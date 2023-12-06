@@ -1,8 +1,19 @@
 # Houston-Blackouts
+This project looked at the impact of winter storms in Houston, Texas in Febuary, 2021. 
 
-Goals:
+## Goals
 - Explore the socioeconomic factors that influenced recovery post blackouts in the Houston, Texas metropolitan area.
 - Explore relationship of median income of counties that had houses that experienced blackouts and those that did not.
+
+## Visualizations
+This project will have two visualizations in the `.RMD` file. The first will show the median income of the counties in Houston metropolitan area, and identify the counties that experienced a blackout between Feb 7th and Feb 16th, 2021. The second plot shows the distribution of median income comparing the counties that experienced blackouts and those that didn't. 
+
+## Skills Highlights
+- vector and raster data  operations
+- vector and raster data manipulation
+- spatial joins
+- plotting with ggplot
+
 
 Contents/Structure:
 

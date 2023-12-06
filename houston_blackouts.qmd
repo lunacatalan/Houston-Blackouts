@@ -1,5 +1,5 @@
 ---
-title: 'Houston Blackouts Analysis'
+title: 'Analysis of blackouts in the Houston, Texas metropolitan area in February 2021'
 author: "Luna Herschenfeld-Catalan"
 date: "2022-12-02"
 output:
@@ -12,12 +12,16 @@ output:
 
 # Background
 
-In February 2021, Texas experienced multiple winter storms that led to power outages across the state and left over 4.5 million homes and buisnesses without power.
+In February 2021, Texas experienced multiple winter storms that led to power outages across the state and left over 4.5 million homes and businesses without power.
 
 ## Goals
 
 -   Investigate socioeconomic factors associated with occurrence of blackouts in Houston, Texas metropolitan area.
 -   Explore the socioeconomic factors that influenced recovery post blackouts in the Houston
+
+## Takeaways 
+- There was no difference in the median income distribution of counties that experienced blackouts and those that did not experience blackouts. 
+- More exploration of income distribution at a finer spatial resolution would be beneficial to understand any economic disparities in the preparedness for buildings to handle winter storms in Houston, Texas. 
 
 ## Datasets
 
@@ -325,7 +329,7 @@ census_centroid <- st_centroid(building_census)
 ### Visualize the distribution of blackout areas over a map of median income
 
 ```{r, message=FALSE, warning=FALSE}
-ggplot(data = h_median) + # map all the census tracks 
+median_income_plot <- ggplot(data = h_median) + # map all the census tracks 
   geom_sf(aes(fill = B19013e1)) + # fill in by medium income 
   geom_sf(data = census_centroid, # plot census centroid 
           alpha = 0.6,
@@ -347,7 +351,8 @@ ggplot(data = h_median) + # map all the census tracks
 labs(title = "Effect of Median Income on Blackout Areas in Metropolitan Houston Area, Texas",
      fill = "Median Income by Census Tract",
      color = "Blackouts")
-  
+
+median_income_plot
 ```
 
 Data exploration to see if there was a pattern I was missing from using centroids instead of filling in by blackout area. Did not get any different pattern.
@@ -400,7 +405,9 @@ all_tracts <- rbind(no_blackouts, blackout_census) %>%
   drop_na() # drop NA values to be able to plot 
 ```
 
-### Plot data!
+### Visualization of Median Income Distribution
+
+Compare areas that experienced blackouts and areas that did not to see if there is a socioeconomic difference between the two.
 
 ```{r include=TRUE, message = FALSE, warning=FALSE}
 # plot the distribution of income in impacted and unimpacted tracts
