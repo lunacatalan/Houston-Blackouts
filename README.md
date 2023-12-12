@@ -17,7 +17,7 @@ This project will have two visualizations in the `.RMD` file. The first will sho
 
 Contents/Structure:
 
-    EDS223-assignment3
+    Houston-Blackouts
     │   README.md
     │   Rmd/Proj files    
     │
