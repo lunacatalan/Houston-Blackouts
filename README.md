@@ -1,5 +1,5 @@
 # Analysis of blackouts in the Houston, Texas metropolitan area in February 2021
-This project looked at the impact of winter storms in Houston, Texas in Febuary, 2021. 
+This project looked at the impact of winter storms in Houston, Texas in Febuary, 2021. For more background information check out my [blog post!](https://lunacatalan.github.io/blog/2023-12-5-houston-blackouts/)
 
 ## Goals
 - Explore the socioeconomic factors that influenced recovery post blackouts in the Houston, Texas metropolitan area.
@@ -17,7 +17,7 @@ This project will have two visualizations in the `.RMD` file. The first will sho
 
 Contents/Structure:
 
-    EDS223-assignment3
+    Houston-Blackouts
     │   README.md
     │   Rmd/Proj files    
     │
